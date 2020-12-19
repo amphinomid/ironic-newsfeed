@@ -1,16 +1,20 @@
 import React from "react"
-import Header from "./header"
-import Footer from './footer'
 import layoutStyles from './layout.module.scss'
 
 const Layout = (props) => {
   return (
     <div className={layoutStyles.container}>
       <div className={layoutStyles.content}>
-        <Header />
+        <header className={headerStyles.header}>
+          ironic newsfeed -- don't stop scrolling!
+        </header>
         {props.children}
       </div>
-      <Footer />
+      <footer>
+        <p style={{ fontSize: `0.75rem` }}>
+          <b>Built by Anne Li, © 2020</b>
+        </p>
+      </footer>
     </div>
   )
 }

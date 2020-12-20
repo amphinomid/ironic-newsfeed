@@ -30,7 +30,7 @@ class App extends React.Component {
           <SocialMediaCard key={this.state.SocialMediaCards.length + 2} />
         ])
       });
-    }, 1000);
+    }, 1500);
   };
 
   render() {

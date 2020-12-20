@@ -1,15 +1,31 @@
 #red-card {
-    height: 315;
+    height: 315px;
     width: 225px;
     background-color: #E04343;
     border-style: solid;
     border-color: #000000;
-    box-shadow: -2.5px 2.5px #505050;
-    margin: 22.5px 2.5px 22.5px 2.5px;
+    /* box-shadow: -2.5px 2.5px #505050; */
+    margin: 12.5px 2.5px 0 2.5px;
 }
 
 #red-card:hover {
     transform: translate(2.5px, -2.5px);
-    box-shadow: -5px 5px #505050;
+    /* box-shadow: -5px 5px #505050; */
+    cursor: pointer;
+}
+
+#white-card {
+    height: 315px;
+    width: 225px;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-color: #000000;
+    /* box-shadow: -2.5px 2.5px #505050; */
+    margin: 12.5px 2.5px 0 2.5px;
+}
+
+#white-card:hover {
+    transform: translate(2.5px, -2.5px);
+    /* box-shadow: -5px 5px #505050; */
     cursor: pointer;
 }

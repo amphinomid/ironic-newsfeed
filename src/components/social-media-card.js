@@ -53,10 +53,10 @@ var now = false
 function generateTime() {
     if (!now) {
         now = true
-        return(<TimeAgo date={time} />)
+        return (<TimeAgo date={time} />)
     } else {
         time -= Math.floor(Math.random() * 5000000)
-        return(<TimeAgo date={time} />)
+        return (<TimeAgo date={time} />)
     }
 }
 
@@ -72,31 +72,67 @@ class SocialMediaCard extends React.Component {
     }
 
     render() {
-        return (
-            <Col>
-                <div id="red-card">
-                    <div style={{ height: `215px`, display: `flex`, flexDirection: `column` }}>
-                        <p style={{ width: `225px`, fontSize: `5rem`, marginTop: `auto`, marginBottom: `auto`, textAlign: `center` }}>{generateEmoji()}</p>
-                    </div>
-                    <div style={{ height: `85px`, display: `flex`, flexDirection: `column` }}>
-                        <p style={{ color: `#FFFFFF`, fontSize: `1rem`, margin: `10px 15px 0 15px`, overflow: `hidden` }}>
-                            <b>{generatePhrase()}</b>
+        let ad = Math.floor(Math.random() * 5)
+        if (ad == 0) {
+            return (
+                <Col>
+                    <div id="white-card">
+                        <p style={{ color: `#FFFFFF`, fontSize: `1rem`, margin: `10px 15px 0 15px`, overflow: `hidden`, color: `#E04343`, textAlign: `right` }}>
+                                <b>Promoted Content&trade;</b>
                         </p>
-                        <p style={{ color: `#FFFFFF`, fontSize: `0.9rem`, alignSelf: `end`, marginLeft: `15px`, marginTop: `auto`, marginBottom: `15px`, overflow: `hidden` }}>
-                            {generateTime()}
+                        <div style={{ height: `187.5px`, display: `flex`, flexDirection: `column` }}>
+                            <p style={{ width: `225px`, fontSize: `5rem`, marginTop: `35px`, marginBottom: `auto`, textAlign: `center`, color: `#E04343` }}>
+                                {generateEmoji()}
+                            </p>
+                        </div>
+                        <div style={{ height: `85px`, display: `flex`, flexDirection: `column` }}>
+                            <p style={{ color: `#FFFFFF`, fontSize: `1rem`, margin: `10px 15px 0 15px`, overflow: `hidden`, color: `#E04343` }}>
+                                <b>{generatePhrase()}</b>
+                            </p>
+                            <p style={{ color: `#FFFFFF`, fontSize: `0.9rem`, alignSelf: `end`, marginLeft: `15px`, marginTop: `auto`, marginBottom: `15px`, overflow: `hidden`, color: `#E04343` }}>
+                                {generateTime()}
+                            </p>
+                        </div>
+                    </div>
+                    <div style={{ margin: `10px 0 0 0`, display: `flex`, flexDirection: `row` }}>
+                        <button onClick={() => this.updateLike(this)} style={{ height: `1.9rem`, cursor: `pointer` }}>
+                            ❤️
+                        </button>
+                        <p className='likes-label' style={{ fontSize: `2rem`, padding: `2.5px 0 2.5px 20px`, marginTop: `-7.5px` }}>
+                            0
                         </p>
                     </div>
-                </div>
-                <div style={{ margin: `-10px 0 12.5px 0`, display: `flex`, flexDirection: `row` }}>
-                    <button onClick={() => this.updateLike(this)} style={{ height: `1.9rem`, cursor: `pointer` }}>
-                        ❤️
-                    </button>
-                    <p className='likes-label' style={{ fontSize: `2rem`, padding: `2.5px 0 2.5px 20px`, marginTop: `-7.5px` }}>
-                        0
-                    </p>
-                </div>
-            </Col>
-        );
+                </Col>
+            );
+        } else {
+            return (
+                <Col>
+                    <div id="red-card">
+                        <div style={{ height: `215px`, display: `flex`, flexDirection: `column` }}>
+                            <p style={{ width: `225px`, fontSize: `5rem`, marginTop: `auto`, marginBottom: `auto`, textAlign: `center` }}>
+                                {generateEmoji()}
+                            </p>
+                        </div>
+                        <div style={{ height: `85px`, display: `flex`, flexDirection: `column` }}>
+                            <p style={{ color: `#FFFFFF`, fontSize: `1rem`, margin: `10px 15px 0 15px`, overflow: `hidden` }}>
+                                <b>{generatePhrase()}</b>
+                            </p>
+                            <p style={{ color: `#FFFFFF`, fontSize: `0.9rem`, alignSelf: `end`, marginLeft: `15px`, marginTop: `auto`, marginBottom: `15px`, overflow: `hidden` }}>
+                                {generateTime()}
+                            </p>
+                        </div>
+                    </div>
+                    <div style={{ margin: `10px 0 0 0`, display: `flex`, flexDirection: `row` }}>
+                        <button onClick={() => this.updateLike(this)} style={{ height: `1.9rem`, cursor: `pointer` }}>
+                            ❤️
+                        </button>
+                        <p className='likes-label' style={{ fontSize: `2rem`, padding: `2.5px 0 2.5px 20px`, marginTop: `-7.5px` }}>
+                            0
+                        </p>
+                    </div>
+                </Col>
+            );
+        }
     }
 }
 

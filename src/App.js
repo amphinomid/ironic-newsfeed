@@ -35,21 +35,23 @@ class App extends React.Component {
 
   render() {
     return (
-      <Layout>
-        <Container style={{ marginLeft: `-12.5px`, marginRight: `-27.5px` }}>
-          <InfiniteScroll
-            className='infinite-scroll'
-            dataLength={this.state.SocialMediaCards.length}
-            next={this.generateNextRow}
-            hasMore={true}
-            loading={<p>Loading...</p>}
-          >
-            <Row>
-              {this.state.SocialMediaCards}
-            </Row>
-          </InfiniteScroll>
-        </Container>
-      </Layout>
+      <div>
+        <Layout>
+          <Container style={{ marginLeft: `-12.5px`, marginRight: `-27.5px` }}>
+            <InfiniteScroll
+              className='infinite-scroll'
+              dataLength={this.state.SocialMediaCards.length}
+              next={this.generateNextRow}
+              hasMore={true}
+              loading={<p>Loading...</p>}
+            >
+              <Row>
+                {this.state.SocialMediaCards}
+              </Row>
+            </InfiniteScroll>
+          </Container>
+        </Layout>
+      </div>
     );
   }
 }

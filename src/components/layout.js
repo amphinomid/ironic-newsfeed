@@ -24,7 +24,7 @@ const Layout = (props) => {
       </div>
       <footer>
         <p style={{ fontSize: `1rem`, textAlign: `center` }}>
-          <b>i unironically hope you're having a good day 🥺</b>
+          <b>hi! i unironically hope you're having a good day 🥺</b>
         </p>
       </footer>
     </div>

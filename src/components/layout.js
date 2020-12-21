@@ -7,7 +7,7 @@ const Layout = (props) => {
     <div className={layoutStyles.container}>
       <div className={layoutStyles.content}>
         <header style={{ paddingLeft: `2.5px`, display: `flex`, flexDirection: `row` }}>
-          <h1 style={{ marginBottom: `37.5px`, paddingLeft: `2.5px` }}>
+          <h1 style={{ marginBottom: `37.5px` }}>
             <Link to="/" style={{ textDecoration: `none` }}>ironic newsfeed</Link>
           </h1>
           <h1 style={{ marginBottom: `37.5px`, paddingLeft: `2.5px`, flexGrow: `1`, textAlign: `right` }}>

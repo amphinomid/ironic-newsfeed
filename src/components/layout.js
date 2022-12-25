@@ -11,11 +11,11 @@ const Layout = (props) => {
             <Link to="/" style={{ textDecoration: `none` }}>ironic newsfeed</Link>
           </h1>
           <h1 style={{ marginBottom: `37.5px`, paddingLeft: `2.5px`, flexGrow: `1`, textAlign: `right` }}>
-            <a href="https://github.com/fibanneacci/ironic-newsfeed" target="_blank" rel="noreferrer">
+            <a href="https://github.com/amphinomid/ironic-newsfeed" target="_blank" rel="noreferrer">
               built
             </a>{` `}
             by{` `}
-            <a href="https://anli.io" target="_blank" rel="noreferrer">
+            <a href="https://amphinomid.github.io" target="_blank" rel="noreferrer">
               anne li
             </a>
           </h1>

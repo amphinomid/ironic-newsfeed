@@ -1,22 +1,15 @@
 {
   "files": {
-    "main.css": "/ironic-newsfeed/static/css/main.ff1f2880.chunk.css",
-    "main.js": "/ironic-newsfeed/static/js/main.cb09088f.chunk.js",
-    "main.js.map": "/ironic-newsfeed/static/js/main.cb09088f.chunk.js.map",
-    "runtime-main.js": "/ironic-newsfeed/static/js/runtime-main.aec23dac.js",
-    "runtime-main.js.map": "/ironic-newsfeed/static/js/runtime-main.aec23dac.js.map",
-    "static/js/2.fd76b2a5.chunk.js": "/ironic-newsfeed/static/js/2.fd76b2a5.chunk.js",
-    "static/js/2.fd76b2a5.chunk.js.map": "/ironic-newsfeed/static/js/2.fd76b2a5.chunk.js.map",
-    "static/js/3.205b08ee.chunk.js": "/ironic-newsfeed/static/js/3.205b08ee.chunk.js",
-    "static/js/3.205b08ee.chunk.js.map": "/ironic-newsfeed/static/js/3.205b08ee.chunk.js.map",
+    "main.css": "/ironic-newsfeed/static/css/main.12922e79.css",
+    "main.js": "/ironic-newsfeed/static/js/main.3e014741.js",
+    "static/js/496.0a5015c7.chunk.js": "/ironic-newsfeed/static/js/496.0a5015c7.chunk.js",
     "index.html": "/ironic-newsfeed/index.html",
-    "static/css/main.ff1f2880.chunk.css.map": "/ironic-newsfeed/static/css/main.ff1f2880.chunk.css.map",
-    "static/js/2.fd76b2a5.chunk.js.LICENSE.txt": "/ironic-newsfeed/static/js/2.fd76b2a5.chunk.js.LICENSE.txt"
+    "main.12922e79.css.map": "/ironic-newsfeed/static/css/main.12922e79.css.map",
+    "main.3e014741.js.map": "/ironic-newsfeed/static/js/main.3e014741.js.map",
+    "496.0a5015c7.chunk.js.map": "/ironic-newsfeed/static/js/496.0a5015c7.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.aec23dac.js",
-    "static/js/2.fd76b2a5.chunk.js",
-    "static/css/main.ff1f2880.chunk.css",
-    "static/js/main.cb09088f.chunk.js"
+    "static/css/main.12922e79.css",
+    "static/js/main.3e014741.js"
   ]
 }

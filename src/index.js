@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { HashRouter, Switch, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import './index.css';
 import App from './App';
 import CommentsPage from './comments.js'
@@ -9,10 +9,10 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     <HashRouter>
-      <Switch>
-        <Route exact path="/" render={ props => <App {...props} />} />
-        <Route exact path="/comments" render={ props => <CommentsPage {...props} />} />
-      </Switch>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/comments" element={<CommentsPage />} />
+      </Routes>
     </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
